@@ -4,6 +4,8 @@
   --background_color_header_footer: #1f2937;
   --logo_color: #f9faf8;
   --header_links: #e5e7eb;
+  --hero_title: #f9faf8;
+  --button: #3882f6;
 }
 
 *,
@@ -29,16 +31,16 @@ body {
 
 header {
   background-color: var(--background_color_header_footer);
-
   display: flex;
   height: 64px;
   padding: 0 16px;
   align-items: center;
+  padding: 0 200px;
 }
 
 .title {
   color: var(--logo_color);
-  font-size: 24px;
+  font-size: 50px;
   font-weight: bolder;
 }
 
@@ -53,4 +55,41 @@ nav {
 }
 li {
   list-style: none;
+}
+
+.hero_section {
+  background-color: var(--background_color_header_footer);
+  padding: 70px 200px;
+  display: flex;
+}
+
+.hero_section p {
+  font-size: 18px;
+  color: var(--header_links);
+}
+
+.hero_title {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--hero_title);
+}
+
+button {
+  background-color: var(--button);
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: var(--header_links);
+  font-size: 18px;
+  margin-top: 18px;
+}
+
+.hero {
+  flex-basis: 50%;
+}
+
+.hero_image {
+  background-image: url("images/computer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-basis: 50%;
 }
